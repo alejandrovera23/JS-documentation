@@ -12,16 +12,17 @@
 <body>
     <nav id="navbar">
 
-        <div>
-
-            <a href="#Intro" class="nav-link">Introduccción</a>
-            <a href="#Dates" class="nav-link">Tipos de datos</a>
-            <a href="#Var" class="nav-link">Variables</a>
-            <a href="#Oper" class="nav-link">Operadores</a>
-            <a href="#Arrays" class="nav-link">Arrays</a>
-            <a href="#Objects" class="nav-link">Objetos</a>
-
-        </div>
+        <header class="nav-title">JavaScript Doc</header>
+        <ul>
+            
+            <li><a href="#Intro" class="nav-link">Introduccción</a></li>
+            <li><a href="#Dates" class="nav-link">Tipos de datos</a></li>
+            <li><a href="#Var" class="nav-link">Variables</a></li>
+            <li><a href="#Oper" class="nav-link">Operadores</a></li>
+            <li><a href="#Arrays" class="nav-link">Arrays</a></li>
+            <li><a href="#Objects" class="nav-link">Objetos</a></li>
+            
+        </ul>
 
     </nav>
 
@@ -30,82 +31,158 @@
         
         <section class="main-section" id="Intro">
 
-            <header>Introducción</header>
+            <article class="main-article one">
+                <header>Introducción</header>
 
-            <p>
-                <strong>Documentación técnica sobre JavaScript.</strong> 
-                Aquí encontrarás información valiosa y útil para aprovechar al máximo este popular lenguaje de programación.
-                Aprenderás sobre su sintaxis, funciones integradas y cómo interactúa con otras tecnologías web.
-                ¡Comencemos tu viaje en el mundo de la programación web!
-            </p>
+                <p>
+                    <strong>Documentación técnica sobre JavaScript.</strong><br> 
+                    Aquí encontrarás información valiosa y útil para aprovechar al máximo este popular lenguaje de programación. <br>
+                    Aprenderás sobre su sintaxis, funciones integradas y cómo interactúa con otras tecnologías web. <br>
+                    ¡Comencemos tu viaje en el mundo de la programación web!
+                </p>
+            </article>
 
         </section>
 
         <!--  -->
-        <section class="main-section" id="Dates">
+            <section class="main-section" id="Dates">
 
-            <header>Tipos de datos</header>
+            <article class="main-article two">
+                <header>Tipos de datos</header>
 
-            <p>
-                Estructuras de datos integradas disponibles en JavaScript y las propiedades que tienen.
-                Estas se pueden utilizar para construir otras estructuras de datos. 
-            </p>
+                <p>
+                    Estructuras de datos integradas disponibles en JavaScript y las propiedades que tienen. <br>
+                    Estas se pueden utilizar para construir otras estructuras de datos. 
+                </p>
 
-            <ul>
-                <li><strong>String:</strong> Esto es una secuencia de texto conocida como cadena. Para indicar que la variable es una cadena, debes escribirlo entre comillas.</li>
-                <li><strong>Number:</strong> Esto es un número. Los números no tienen comillas.</li>
-                <li><strong>Boolean:</strong> Tienen valor verdadero/falso. "true/false" son palabras especiales en JS, y no necesitan comillas.</li>
-                <li><strong>Array:</strong> Una estructura que te permite almacenar varios valores en una sola referencia.</li>
-                <li><strong>Object:</strong> Básicamente cualquier cosa. Todo en JavaScript es un objeto y puede ser almacenado en una variable. Mantén esto en mente mientras aprendes.</li>
-            </ul>
+                <ul>
+                    <li><strong>String:</strong> Esto es una secuencia de texto conocida como cadena. Para indicar que la variable es una cadena, debes escribirlo entre comillas.</li>
+                    <li><strong>Number:</strong> Esto es un número. Los números no tienen comillas.</li>
+                    <li><strong>Boolean:</strong> Tienen valor verdadero/falso. "true/false" son palabras especiales en JS, y no necesitan comillas.</li>
+                    <li><strong>Array:</strong> Una estructura que te permite almacenar varios valores en una sola referencia.</li>
+                    <li><strong>Object:</strong> Básicamente cualquier cosa. Todo en JavaScript es un objeto y puede ser almacenado en una variable. Mantén esto en mente mientras aprendes.</li>
+                </ul>
 
-            <p>Ejemplos:</p>
+                <h2>Ejemplos:</h2>
 
-            <p>String</p>
-            <code>
-                let miVariable = 'Bob';
-            </code>
-            <p>Number</p>
-            <code>
-                let miVariable = 10;
-            </code>
-            <p>Boolean</p>
-            <code>
-                let miVariable = true;
-            </code>
-            <p>Array</p>
-            <code>
-                let miVariable = [1,'Bob','Steve',10];
-                <p>Llama a cada miembro del array así:</p> miVariable[0], miVariable[1], <p>etc...</p>
-            </code>
-            <p>Object</p>
-            <code>
-                let miVariable = document.querySelector('h1');
-            </code>
-            <p>Todos los ejemplos anteriores también.</p>
+                <h3>String</h3>
+                <code class="code-ej">
+                    let miVariable = 'Bob';
+                </code>
+                <h3>Number</h3>
+                <code class="code-ej">
+                    let miVariable = 10;
+                </code>
+                <h3>Boolean</h3>
+                <code class="code-ej">
+                    let miVariable = true;
+                </code>
+                <h3>Array</h3>
+                <code class="code-ej"> 
+                    let miVariable = [1,'Bob','Steve',10]; 
+                </code>
+                <h3>Object</h3>
+                <code class="code-ej">
+                    let miVariable = document.querySelector('h1');
+                </code>
 
+            </article>
         </section>
 
         <!--  -->
         <section class="main-section" id="Var">
+            <article class="main-article three">
+                <header>Variables</header>
+                
+                <p>
+                    Las variables son contenedores en los que puedes almacenar valores. <br>
+                    Primero debes declarar la variable con la palabra clave <strong>var</strong> (menos recomendado) <br>
+                    o <strong>let</strong>, seguida del nombre que le quieras dar. <i>Se recomienda más el uso de let que de var.</i> <br>
+                </p>
 
+                <p>Ejemplo:</p>
+                <code class="code-ej">let nombreDeLaVariable;</code>
+                <p>Tras declarar una variable, puedes asignarle un valor:</p>
+                <code class="code-ej">nombreDeLaVariable = "Bob";</code>
+                <p>O puedes hacer las dos cosas en la misma línea si lo necesitas:</p>
+                <code class="code-ej">let nombreDeLaVariable = "Bob";</code>
+
+
+            </article>
         </section>
 
         <!--  -->
         <section class="main-section" id="Oper">
+
+            <article>
+                <header>Operadores</header>
+
+                <p>
+                    JavaScript tiene los siguientes tipos de operadores. <br>
+                    Esta sección describe los operadores y contiene información sobre la precedencia de los mismos.
+                </p>
+
+                <ul>
+                    <li>Operadores de asignación</li>
+                    <li>Operadores de comparación</li>
+                    <li>Operadores aritméticos</li>
+                    <li>Operadores bit a bit</li>
+                    <li>Operadores lógicos</li>
+                    <li>Operadores de cadena</li>
+                    <li>Operador condicional (ternario)</li>
+                    <li>Operador coma</li>
+                    <li>Operadores unarios</li>
+                    <li>Operadores relacionales</li>
+                </ul>
+
+            </article>
 
         </section>
 
         <!--  -->
         <section class="main-section" id="Arrays">
 
+            <article>
+                <header>Arrays</header>
+
+                <p>
+                    Los arrays son objetos similares a una lista cuyo prototipo proporciona <br>
+                    métodos para efectuar operaciones de recorrido y de mutación. <br>
+                    Tanto la longitud como el tipo de los elementos de un array son variables. <br>
+                    Dado que la longitud de un array puede cambiar en cualquier momento, <br>
+                    y los datos se pueden almacenar en ubicaciones no contiguas, no hay garantía de que los arrays <br>
+                    de JavaScript sean densos; esto depende de cómo el programador elija usarlos. <br>
+                    En general estas características son cómodas, pero si, en su caso particular, <br>
+                    no resultan deseables, puede considerar el uso de arrays con tipo. <br>
+                </p>
+
+            </article>
+
         </section>
 
         <!--  -->
         <section class="main-section" id="Objects">
 
+            <article>
+                <header>Objetos</header>
+
+                <p>
+                    Un objeto es una colección de datos relacionados y/o funcionalidad <br>
+                    (que generalmente consta de algunas variables y funciones, que se denominan <br>
+                    propiedades y métodos cuando están dentro de objetos). <br>
+                    Vamos a trabajar a través de un ejemplo para mostrate cómo son. <br>
+                </p>
+
+            </article>
+
         </section>
     </main>
+
+    <footer>
+        <small>
+            Fuente utilizada para los conceptos y definiciones: <a href="https://developer.mozilla.org/es/"><strong>MDN WEB DOCS_</strong> </a> 
+        </small>
+    </footer>
 
 </body>
 </html>
